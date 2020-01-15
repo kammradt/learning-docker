@@ -15,6 +15,25 @@
 * Github: [@kammradt](https://github.com/kammradt)
 * LinkedIn: [@vinicius-kammradt](https://linkedin.com/in/vinicius-kammradt)
 
+
+## Notes 📝
+
+| Command 	                  | Result                                  	|
+|-     	                      |-                                        	|
+| *Images*                                                                |
+|  `docker images`     	      | List all docker images                   	|
+|  `docker pull {name}`     	| Get the image of `name`                	  |
+|  `docker rmi {id}`         	| Delete a image by `id`                   	|
+| *Containers*    	                                                  	  |
+|  `docker ps`              	| List all running containers              	|
+|  `docker run {name}`      	| Run a image by `name` (pull if necessary) |
+|  `docker run -it {name}`   	| Run the image and have a terminal to use  |
+|  `docker stats`            	| Verify memory usage                       |
+|  `docker system df`        	| Verify disk usage                         |
+|  `docker system prune`     	| Remove unused data                        |
+|  `docker system prune -a` 	| Remove unused data and images             |
+
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
