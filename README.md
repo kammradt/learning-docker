@@ -18,20 +18,35 @@
 
 ## Notes 📝
 
-| Command 	                  | Result                                  	|
-|-     	                      |-                                        	|
-| *Images*                                                                |
-|  `docker images`     	      | List all docker images                   	|
-|  `docker pull {name}`     	| Get the image of `name`                	  |
-|  `docker rmi {id}`         	| Delete a image by `id`                   	|
-| *Containers*    	                                                  	  |
-|  `docker ps`              	| List all running containers              	|
-|  `docker run {name}`      	| Run a image by `name` (pull if necessary) |
-|  `docker run -it {name}`   	| Run the image and have a terminal to use  |
-|  `docker stats`            	| Verify memory usage                       |
-|  `docker system df`        	| Verify disk usage                         |
-|  `docker system prune`     	| Remove unused data                        |
-|  `docker system prune -a` 	| Remove unused data and images             |
+### **Basic commands 👨‍💻**
+
+| Command 	                              | Result                                    	|
+|-     	                                  |-                                          	|
+| *Images*                                                                              |
+|  `docker images -a`  	                  | List all docker images                     	|
+|  `docker images -f "condition"`         | Filter listed images based on condition     |
+|  `docker pull {name}`          	        | Get the image of `name`                 	  |
+|  `docker rmi {id}`                      | Delete a image by `id`                    	|
+| *Containers*    	                                                         	          |
+|  `docker ps`                  	        | List all running containers                 |
+|  `docker run {name}`          	        | Run a image by `name` (pull if necessary)   |
+|  `docker run -it {name}`       	        | Run the image and have a terminal to use    |
+|  `docker stop {id}`       	            | Stop a container by `id`                    |
+|  `docker stats`                	        | Verify memory usage                         |
+|  `docker system df`            	        | Verify disk usage                           |
+|  `docker system prune`         	        | Remove unused data                          |
+|  `docker system prune -a`     	        | Remove unused data and images               |
+|                                                                                       |
+|*Useful commands together* |
+|                                                                                       |
+|  Run an image with terminal available and a  custom name to it      	                |
+|  `docker run --name nameWanted -it imagename bash`     	                              |
+|                                                                                       |
+
+
+### **Definitions 👨‍🎓**
+An `image` is a file that works as a template for creating a `Container`.  
+A `Container` is an instance of an `image`.  
 
 
 ## Show your support
