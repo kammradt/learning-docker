@@ -31,7 +31,9 @@
 |  `docker ps`                  	        | List all running containers                 |
 |  `docker run {name}`          	        | Run a image by `name` (pull if necessary)   |
 |  `docker run -it {name}`       	        | Run the image and have a terminal to use    |
-|  `docker stop {id}`       	            | Stop a container by `id`                    |
+|  `docker stop {name}`       	          | Stop a container by `name`                  |
+|  `docker kill {name}`       	          | Kill a container by `name`                  |
+|  `docker attach {name}`       	        | Open a shell related to the container       |
 |  `docker stats`                	        | Verify memory usage                         |
 |  `docker system df`            	        | Verify disk usage                           |
 |  `docker system prune`         	        | Remove unused data                          |
