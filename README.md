@@ -44,6 +44,8 @@
 |  Run an image with terminal available and a  custom name to it      	                |
 |  `docker run --name nameWanted -it imagename bash`     	                              |
 |                                                                                       |
+|  Creating an container with name and also using a simple directly storage for it          |
+|  `docker run --name myJenkins1 -p 8080:8080 -p 50000:50000 -v /home/kammradt:/var/jenkins_home jenkins`     	                              |
 
 
 ### **Definitions 👨‍🎓**
