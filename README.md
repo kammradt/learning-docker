@@ -79,6 +79,26 @@ CMD [ "echo", "Hi ;)" ]
 ### Useful [link](https://github.com/wsargent/docker-cheat-sheet#dockerfile) with a cheat sheet
 
 
+### **Docker compose**
+**What is?**  
+Is a tool to create and manipulate multiple containers in a better and easy way  
+**How?**
+1. Create a file named docker-compose.yml
+2. Add necessary instructions such as:
+```yml
+version: '3'
+services:
+    web:
+        image: nginx
+        ports:
+        - 9090:80
+    database:
+        image: redis
+```
+3. Check validity of created file: `docker-compose config`
+4. Run the .yml file (detached): `docker-compose up -d`  
+4.1. You can simply scale it to multiple instances by using: `docker-compose up -d --scale database=4 `
+5. Stop running containers: `docker-compose down`
 ## Show your support
 
 Give a ⭐️ if this project helped you!
