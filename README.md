@@ -39,13 +39,16 @@
 |  `docker system prune`         	        | Remove unused data                          |
 |  `docker system prune -a`     	        | Remove unused data and images               |
 |                                                                                       |
+
+| Command 	                              | Result                                    	|
+|-     	                                  |-                                          	|
 |*Useful commands together* |
 |                                                                                       |
-|  Run an image with terminal available and a  custom name to it      	                |
+|  Run an image with terminal available and a custom name to it      	                  |
 |  `docker run --name nameWanted -it imagename bash`     	                              |
 |                                                                                       |
-|  Creating an container with name and also using a simple directly storage for it          |
-|  `docker run --name myJenkins1 -p 8080:8080 -p 50000:50000 -v /home/kammradt:/var/jenkins_home jenkins`     	                              |
+|  Creating an container with name and also using a simple directly storage for it      |
+|  `docker run --name myJenkins1 -p 8080:8080 -p 50000:50000 -v /home/kammradt:/var/jenkins_home jenkins` |
 
 ### **Definitions 👨‍🎓**
 An `image` is a file that works as a template for creating a `Container`.  
@@ -55,7 +58,7 @@ A `Container` is an instance of an `image`.
 
 | Command 	                              | Result                                    	|
 |-     	                                  |-                                          	|
-| `docker build -t mynewimage DockerfilePath:1.0`|Creates an image from Dockerfile|
+| `docker build -t mynewimage DockerfilePath:1.0`|Creates an image from Dockerfile      |
 
 1. Create a file literally named `Dockerfile`
 2. Add necessary instructions such as:
