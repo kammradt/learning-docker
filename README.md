@@ -54,7 +54,7 @@
 An `image` is a file that works as a template for creating a `Container`.  
 A `Container` is an instance of an `image`.  
 
-### Using a Dockerfile
+### **Using a Dockerfile**
 
 | Command 	                              | Result                                    	|
 |-     	                                  |-                                          	|
