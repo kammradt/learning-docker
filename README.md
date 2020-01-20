@@ -47,10 +47,33 @@
 |  Creating an container with name and also using a simple directly storage for it          |
 |  `docker run --name myJenkins1 -p 8080:8080 -p 50000:50000 -v /home/kammradt:/var/jenkins_home jenkins`     	                              |
 
-
 ### **Definitions 👨‍🎓**
 An `image` is a file that works as a template for creating a `Container`.  
 A `Container` is an instance of an `image`.  
+
+### Using a Dockerfile
+
+| Command 	                              | Result                                    	|
+|-     	                                  |-                                          	|
+| `docker build -t mynewimage DockerfilePath:1.0`|Creates an image from Dockerfile|
+
+1. Create a file literally named `Dockerfile`
+2. Add necessary instructions such as:
+```dockerfile
+# A base image to start
+FROM ubuntu  
+
+# An identification
+LABEL Kammradt <vinicius.kammradt1@gmail.com>
+
+# During the process of building the image
+RUN apt-get update
+
+# Will be executed when creating a container
+CMD [ "echo", "Hi ;)" ]
+```
+  
+### Useful [link](https://github.com/wsargent/docker-cheat-sheet#dockerfile) with a cheat sheet
 
 
 ## Show your support
