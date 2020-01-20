@@ -18,7 +18,7 @@
 
 ## Notes 📝
 
-### **Basic commands 👨‍💻**
+## **Basic commands 👨‍💻**
 
 | Command 	                              | Result                                    	|
 |-     	                                  |-                                          	|
@@ -50,11 +50,11 @@
 |  Creating an container with name and also using a simple directly storage for it      |
 |  `docker run --name myJenkins1 -p 8080:8080 -p 50000:50000 -v /home/kammradt:/var/jenkins_home jenkins` |
 
-### **Definitions 👨‍🎓**
+## **Definitions 👨‍🎓**
 An `image` is a file that works as a template for creating a `Container`.  
 A `Container` is an instance of an `image`.  
 
-### **Using a Dockerfile**
+## **Using a Dockerfile**
 
 | Command 	                              | Result                                    	|
 |-     	                                  |-                                          	|
@@ -76,10 +76,10 @@ RUN apt-get update
 CMD [ "echo", "Hi ;)" ]
 ```
   
-### Useful [link](https://github.com/wsargent/docker-cheat-sheet#dockerfile) with a cheat sheet
+## Useful [link](https://github.com/wsargent/docker-cheat-sheet#dockerfile) with a cheat sheet
 
 
-### **Docker compose**
+## **Docker compose**
 **What is?**  
 Is a tool to create and manipulate multiple containers in a better and easy way  
 **How?**
@@ -99,6 +99,17 @@ services:
 4. Run the .yml file (detached): `docker-compose up -d`  
 4.1. You can simply scale it to multiple instances by using: `docker-compose up -d --scale database=4 `
 5. Stop running containers: `docker-compose down`
+
+
+## **Docker volumes**
+| Command 	                              | Result                              	|
+|-     	                                  |-                                   	|
+| `docker volume ls `                     | List all volumes                     |
+| `docker volume create nameofvolume` `   | creating a new volumes               |
+| `docker volume prune `                  | Remove all unused volumes            |
+| `docker inspect nameofvolume `          | Verify details            |
+
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
