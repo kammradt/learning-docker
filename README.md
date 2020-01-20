@@ -102,12 +102,12 @@ services:
 
 
 ## **Docker volumes**
-| Command 	                              | Result                              	|
-|-     	                                  |-                                   	|
-| `docker volume ls `                     | List all volumes                     |
-| `docker volume create nameofvolume` `   | creating a new volumes               |
-| `docker volume prune `                  | Remove all unused volumes            |
-| `docker inspect nameofvolume `          | Verify details            |
+| Command 	                              | Result                     |
+|-     	                                  |-                           |
+| `docker volume ls `                     | List all volumes           |
+| `docker volume create nameofvolume` `   | creating a new volumes     |
+| `docker volume prune `                  | Remove all unused volumes  |
+| `docker inspect nameofvolume `          | Verify details             |
 
 
 ## Show your support
