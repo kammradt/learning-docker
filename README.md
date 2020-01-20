@@ -112,6 +112,7 @@ services:
 
 ## **Docker Swarm**
 It is one of multiple `(Kubernetes | Apache Mesos)` orchestration tool for docker containers.  
+
 | Command 	                                                           |
 |-     	                                                               |
 | Listing machines                                                     |
