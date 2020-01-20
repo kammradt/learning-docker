@@ -112,8 +112,8 @@ services:
 
 ## **Docker Swarm**
 It is one of multiple `(Kubernetes | Apache Mesos)` orchestration tool for docker containers.  
-| Command 	                              | Result                     |
-|-     	                                  |-                           |
+| Command 	                                                           |
+|-     	                                                               |
 | Listing machines                                                     |
 | `docker-machine ls`                                                  |
 ||
@@ -145,8 +145,8 @@ It is one of multiple `(Kubernetes | Apache Mesos)` orchestration tool for docke
 |Stoping a machine                                                     |
 | `docker-machine stop manager0`                                       |
 ||
-|Removing a machine                                                     |
-| `docker-machine rm manager0`                                          |
+|Removing a machine                                                    |
+| `docker-machine rm manager0`                                         |
 ||
 
 
