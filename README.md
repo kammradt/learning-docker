@@ -110,6 +110,46 @@ services:
 | `docker inspect nameofvolume `          | Verify details             |
 
 
+## **Docker Swarm**
+It is one of multiple `(Kubernetes | Apache Mesos)` orchestration tool for docker containers.  
+| Command 	                              | Result                     |
+|-     	                                  |-                           |
+| Listing machines                                                     |
+| `docker-machine ls`                                                  |
+||
+|Creating a Node that will act like a manager                          |
+| `docker-machine create --driver virtualbox manager0`                 |
+||
+|Creating Nodes that will act like workers                             |
+| `docker-machine create --driver virtualbox worker0`                  |
+| `docker-machine create --driver virtualbox worker1`                  |
+||
+|Connecting to machines
+| `docker-machine ssh machineName`                                     |
+||
+|Initilize a machine as manager                                        |
+| `docker swarm init --advertise-addr 192.168.xxx.xxx`                 |
+||
+|Get the code to add workers                                           |
+| `docker swarm join-token worker`                                     |
+||
+|Running containers                                                    |
+| `docker service create --replicas 3 -p 80:80 --name web1 nginx`      |
+||
+|Scaling                                                               |
+| `docker service scale web1=12`                                       |
+||
+|Leaving the swarm                                                     |
+| `docker swarm leave`                                                 |
+||
+|Stoping a machine                                                     |
+| `docker-machine stop manager0`                                       |
+||
+|Removing a machine                                                     |
+| `docker-machine rm manager0`                                          |
+||
+
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
