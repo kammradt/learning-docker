@@ -40,8 +40,8 @@
 |  `docker system prune -a`     	        | Remove unused data and images               |
 |                                                                                       |
 
-| Command 	                              | Result                                    	|
-|-     	                                  |-                                          	|
+| Command |
+|-|     	                                  
 |*Useful commands together* |
 |                                                                                       |
 |  Run an image with terminal available and a custom name to it      	                  |
